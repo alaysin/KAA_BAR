@@ -1,5 +1,7 @@
 package level.up.kaabar.User;
 
+import lombok.Setter;
+
 import javax.persistence.Id;
 
 public class User {
@@ -10,6 +12,8 @@ public class User {
     private boolean isAdmin;
     private String name;
     private String surname;
+    @Setter
+    private boolean toDelete;
 
     public User(String login, String password, boolean isAdmin, String name, String surname) {
         this.login = login;

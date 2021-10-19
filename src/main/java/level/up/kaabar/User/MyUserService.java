@@ -13,9 +13,5 @@ public interface MyUserService{
 
     public User creteNewManager(String login, String password, boolean isAdmin, String name, String surname);
 
-    public void deleteUser(int id);
-
-    public void updatetoAdmin(int id);
-
     public User findBySurName(String surname);
 }

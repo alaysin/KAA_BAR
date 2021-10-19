@@ -18,7 +18,9 @@ public class MyUserServiceImpl implements MyUserService {
 
     @Override
     public List findAll() {
-        return null;
+
+        ArrayList<User> usersFound = users;
+        return usersFound;
     }
 
     @Override
@@ -31,16 +33,6 @@ public class MyUserServiceImpl implements MyUserService {
     public User creteNewManager(String login, String password, boolean isAdmin, String name, String surname) {
         User newUser = new User(login, password,isAdmin, name, surname);
         return newUser;
-    }
-
-    @Override
-    public void deleteUser(int id) {
-
-    }
-
-    @Override
-    public void updatetoAdmin(int id) {
-
     }
 
     @Override
