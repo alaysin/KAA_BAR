@@ -24,13 +24,13 @@ public class MyDrinkServiceImpl implements MyDrinkSevrvice {
 
     @Override
     public Drink updateDrinkQuantity (int id, int quantyty, Drink drink) {
-        if (drinks.size()>= id && id>=0){
-            Drink drink1 = new
-            drinks.set(id)
+        if (drinks.size()<= id && id<=0){
+        return drink;
 
-            return drinks.get(id).setQuantity(quantyty);
         }
+        drinks.get(id).setQuantity(quantyty);
 
+        return drinks.get(id);
     }
 
     @Override
