@@ -10,7 +10,7 @@ public interface MyDrinkSevrvice {
 
     public Drink findByID (int id);
 
-    public void updateDrinkQuantity (int id, int quantyty);
+    public Drink updateDrinkQuantity (int id, int quantyty, Drink drink);
 
     public List<Drink> findAll();
 }

@@ -28,4 +28,5 @@ public class Drink {
         this.typ = typ;
 
     }
+
 }

@@ -42,4 +42,9 @@ public class MyUserServiceImpl implements MyUserService {
     public void updatetoAdmin(int id) {
 
     }
+
+    @Override
+    public User findBySurName(String surname) {
+        return null;
+    }
 }

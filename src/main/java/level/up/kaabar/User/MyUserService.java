@@ -16,4 +16,6 @@ public interface MyUserService{
     public void deleteUser(int id);
 
     public void updatetoAdmin(int id);
+
+    public User findBySurName(String surname);
 }
