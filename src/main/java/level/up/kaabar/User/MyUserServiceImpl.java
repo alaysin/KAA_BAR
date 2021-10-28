@@ -1,8 +1,15 @@
 package level.up.kaabar.User;
 
 import level.up.kaabar.Drinks.Drink;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Component;
 
+import javax.sql.DataSource;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,4 +46,21 @@ public class MyUserServiceImpl implements MyUserService {
     public User findBySurName(String surname) {
         return null;
     }
+
+    @Autowired
+    DataSource dataSource;
+
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+
+
+    public void run (String... args) throws Exception {
+
+
+        }
+
+
 }

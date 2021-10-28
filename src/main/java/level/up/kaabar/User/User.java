@@ -3,13 +3,11 @@ package level.up.kaabar.User;
 import level.up.kaabar.Drinks.Drink;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.util.List;
 
+@Entity
 public class User {
     @Id
     @GeneratedValue
@@ -37,8 +35,7 @@ public class User {
     @Setter
     private boolean toDelete;
 
-    @OneToMany(mappedBy = "manager")
-    private List<Drink> drinks;
+    //private List<Drink> drinks;
 
     public User(String login, String password, boolean isAdmin, String name, String surname) {
         this.login = login;
@@ -53,5 +50,9 @@ public class User {
         this.password = password;
         this.name = name;
         this.surname = surname;
+    }
+
+    public User() {
+
     }
 }

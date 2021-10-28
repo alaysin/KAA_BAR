@@ -3,12 +3,10 @@ package level.up.kaabar.Drinks;
 import level.up.kaabar.User.Manager;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
+@Entity
 public class Drink {
     @Id
     @GeneratedValue
@@ -36,8 +34,8 @@ public class Drink {
 
     @Setter
     @Column
-    @ManyToOne
-    private Manager manager;
+    //@ManyToOne
+    private int managerId;
 
     public Drink(String drinkName, String brand, double price, int quantity, String typ) {
         this.drinkName = drinkName;
@@ -48,13 +46,16 @@ public class Drink {
 
     }
 
-    public Drink(@NotBlank String drinkName, @NotBlank String brand, @NotBlank double price, int quantity, @NotBlank String typ, Manager manager) {
+    public Drink(@NotBlank String drinkName, @NotBlank String brand, @NotBlank double price, int quantity, @NotBlank String typ, int managerId) {
         this.drinkName = drinkName;
         this.brand = brand;
         this.price = price;
         this.quantity = quantity;
         this.typ = typ;
-        this.manager = manager;
+        this.managerId = managerId;
     }
 
+    public Drink() {
+
+    }
 }
