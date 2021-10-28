@@ -1,15 +1,17 @@
 package level.up.kaabar.Drinks;
 
 import level.up.kaabar.User.Manager;
+import level.up.kaabar.User.User;
 import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity
+@Table
 public class Drink {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "drink_id_seq")
     private int id;
 
     @Column(nullable = false, updatable = false, length = 50)
@@ -36,7 +38,10 @@ public class Drink {
     @Column
     //@ManyToOne
     private int managerId;
-
+/*
+    @ManyToOne
+    private User user;
+*/
     public Drink(String drinkName, String brand, double price, int quantity, String typ) {
         this.drinkName = drinkName;
         this.brand = brand;
