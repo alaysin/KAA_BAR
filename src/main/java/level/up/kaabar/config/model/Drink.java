@@ -1,17 +1,17 @@
-package level.up.kaabar.Drinks;
+package level.up.kaabar.config.model;
 
-import level.up.kaabar.User.Manager;
-import level.up.kaabar.User.User;
+import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table
+@Table  (name = "drinks")
 public class Drink {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "drink_id_seq")
+    @SequenceGenerator(name = "drink_id_seq", allocationSize = 1)
     private int id;
 
     @Column(nullable = false, updatable = false, length = 50)
@@ -33,15 +33,17 @@ public class Drink {
     @Column(nullable = false, updatable = false, length = 50)
     @NotBlank
     private String typ;
-
+/*
     @Setter
     @Column
     //@ManyToOne
     private int managerId;
-/*
-    @ManyToOne
-    private User user;
 */
+    @ManyToOne
+    @Getter
+    @Setter
+    private User user;
+
     public Drink(String drinkName, String brand, double price, int quantity, String typ) {
         this.drinkName = drinkName;
         this.brand = brand;
@@ -51,16 +53,17 @@ public class Drink {
 
     }
 
-    public Drink(@NotBlank String drinkName, @NotBlank String brand, @NotBlank double price, int quantity, @NotBlank String typ, int managerId) {
+    public Drink(@NotBlank String drinkName, @NotBlank String brand, @NotBlank double price, int quantity, @NotBlank String typ, User user) {
         this.drinkName = drinkName;
         this.brand = brand;
         this.price = price;
         this.quantity = quantity;
         this.typ = typ;
-        this.managerId = managerId;
+        this.user = user;
     }
 
     public Drink() {
 
     }
+
 }

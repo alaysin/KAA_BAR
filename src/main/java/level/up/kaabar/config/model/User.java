@@ -1,20 +1,21 @@
-package level.up.kaabar.User;
+package level.up.kaabar.config.model;
 
-import level.up.kaabar.Drinks.Drink;
 import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table (name = "user")
+@Table (name = "users")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_id_seq")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "users_id_seq")
+    @SequenceGenerator(name = "users_id_seq", allocationSize = 1)
     private int id;
 
-    @Column(nullable = false, unique = true, length = 100)
+    @Column( nullable = false, unique = true, length = 100)
     @NotBlank
     private String login;
 
@@ -31,27 +32,27 @@ public class User {
 
     @Column(nullable = false, unique = false, length = 100)
     @NotBlank
-    private String surname;
+    private String last_name;
 
     @Setter
     private boolean toDelete;
-/*
+
     @OneToMany(mappedBy = "manager")
-    private List<Drink> drinks;
-*/
-    public User(String login, String password, boolean isAdmin, String name, String surname) {
+    private List<Drink> drinks = new ArrayList<>();
+
+    public User(String login, String password, boolean isAdmin, String name, String last_name) {
         this.login = login;
         this.password = password;
         this.isAdmin = isAdmin;
         this.name = name;
-        this.surname = surname;
+        this.last_name = last_name;
     }
 
-    public User(String login, String password, String name, String surname) {
+    public User(String login, String password, String name, String last_name) {
         this.login = login;
         this.password = password;
         this.name = name;
-        this.surname = surname;
+        this.last_name = last_name;
     }
 
     public User() {
@@ -98,12 +99,12 @@ public class User {
         this.name = name;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getLast_name() {
+        return last_name;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
     public boolean isToDelete() {

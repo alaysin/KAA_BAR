@@ -1,6 +1,6 @@
 package level.up.kaabar.User;
 
-import org.springframework.stereotype.Component;
+import level.up.kaabar.config.model.User;
 
 import java.util.List;
 

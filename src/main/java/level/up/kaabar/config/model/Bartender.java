@@ -1,4 +1,4 @@
-package level.up.kaabar.User;
+package level.up.kaabar.config.model;
 
 public class Bartender extends User{
     public Bartender(String login, String password, String name, String surname) {

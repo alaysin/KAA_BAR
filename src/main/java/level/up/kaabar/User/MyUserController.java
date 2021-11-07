@@ -1,17 +1,24 @@
 package level.up.kaabar.User;
 
+import level.up.kaabar.config.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @RequestMapping ("/user")
 public class MyUserController {
 
+    @GetMapping
+    public String index() {
+        return "src/main/resources/templates/user.html";
+    }
+
     @Autowired
     MyUserServiceImpl myUserServiceImpl;
+
+
 
     @GetMapping
     public List<User> usersFindAll() {

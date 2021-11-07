@@ -1,5 +1,6 @@
 package level.up.kaabar.Drinks;
 
+import level.up.kaabar.config.model.Drink;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
