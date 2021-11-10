@@ -1,4 +1,4 @@
-package level.up.kaabar.config.model;
+package level.up.kaabar.model;
 
 import lombok.Setter;
 
@@ -36,10 +36,10 @@ public class User {
 
     @Setter
     private boolean toDelete;
-
+/*
     @OneToMany(mappedBy = "manager")
     private List<Drink> drinks = new ArrayList<>();
-
+*/
     public User(String login, String password, boolean isAdmin, String name, String last_name) {
         this.login = login;
         this.password = password;

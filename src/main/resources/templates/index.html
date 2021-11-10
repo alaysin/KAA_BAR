@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.6.0/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+    <h1></h1>
+    <div>
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/registration">Registration</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <form action="/user/logout" method="post">
+            <input type="submit" class="btn btn-danger" value="Logout">
+        </form>
+    </div>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+
+        <tr>
+            <th scope="row"></th>
+            <th scope="col">Nickname</th>
+            <th scope="col">Breed</th>
+            <th scope="col">Birthday</th>
+            <th scope="col">New Owner Name</th>
+            <!--            <th scope="col">Reserved or not</th>-->
+            <th scope="col">Reservation Date</th>
+        </tr>
+
+        </thead>
+        <tbody>
+
+
+    </table>
+    <a class="btn btn-secondary" aria-current="page" href="/admin/drinks/add" role="button"
+       >Add Pets</a>
+
+</div>
+</body>
+</html>

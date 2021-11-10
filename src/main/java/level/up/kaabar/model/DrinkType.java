@@ -1,4 +1,4 @@
-package level.up.kaabar.config.model;
+package level.up.kaabar.model;
 
 public enum DrinkType {
     BEER,

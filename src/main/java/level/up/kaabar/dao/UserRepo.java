@@ -1,6 +1,6 @@
 package level.up.kaabar.dao;
 
-import level.up.kaabar.config.model.User;
+import level.up.kaabar.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 

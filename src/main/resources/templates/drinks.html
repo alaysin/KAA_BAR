@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div th:replace="fragments/header :: header"/>
+</head>
+<body>
+<nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Simple CRM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Контакты</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row" style="padding-top: 10px">
+        <div class="col-md-6">
+            <button class="btn btn-success" data-toggle="modal" data-target="#addContact">Добавить</button>
+        </div>
+        <div class="col-md-6" style="text-align: right">
+            <form class="form-inline float-right">
+                <div class="form-group">
+                    <input name="q" th:value="${query}" class="form-control mb-2" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Найти</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <table class="table table-bordered tab-content">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Брэнд</th>
+                <th>Цена</th>
+                <th>Количество</th>
+                <th>Тип</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="item: ${drinks}">
+                <td th:text="${item.name}" />
+                <td th:text="${item.brand}" />
+                <td th:text="${item.price}" />
+                <td th:text="${item.quantity}" />
+                <td th:text="${item.typ}" />
+
+            </tr>
+            </tbody>
+        </table>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item" th:if="${hasPrev}"><a class="page-link" th:href="@{/contacts(page=${currentPage - 1})}">Previous</a></li>
+                <li class="page-item" th:classappend="${page == currentPage} ? 'active'" th:each="page: ${#numbers.sequence(minPage, maxPage)}"><a class="page-link" th:href="@{/contacts(page=${page})}" th:text="${page}"></a></li>
+                <li class="page-item" th:if="${hasNext}"><a class="page-link" th:href="@{/contacts(page=${currentPage + 1})}">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="modal fade" id="addContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="firstName" class="col-md-4 col-form-label">First name</label>
+                        <div class="col-md-8">
+                            <input name="firstName" class="form-control" id="firstName" placeholder="First name">
+                        </div>
+                    </div>
+                    <div class="form-group row" >
+                        <label for="lastName" class="col-md-4 col-form-label">last name</label>
+                        <div class="col-md-8">
+                            <input name="lastName" class="form-control" id="lastName" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-4 col-form-label">Email</label>
+                        <div class="col-md-8">
+                            <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="saveContact" type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

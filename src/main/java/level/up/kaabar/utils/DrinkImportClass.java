@@ -25,16 +25,21 @@ public class DrinkImportClass {
                 .build();
 
         List<Object[]> params = reader.readAll().stream()
-                .map($ -> new Object[]{$[0], $[1], $[2], $[3], $[4]})
+                .map($ -> new Object[]{$[0], $[1], numberChanger($[2]), numberChanger($[3]), $[4]})
                 .collect(Collectors.toList());
-try {
-        jdbcTemplate.batchUpdate("insert into drinks (drinkname, brand, price, quantity, typ) values (?, ?, ?, ?, ?)", params);
+        System.out.println(params.get(0));
 
-}
-catch (Exception e){
-    System.out.println(e);
+        jdbcTemplate.batchUpdate("insert into drinks (name, brand, price, quantity, typ) values (?, ?, ?, ?, ?)", params);
 
-}
+
+    }
+    private static int numberChanger(String string) {
+        if (!string.equals("")) {
+            System.out.println(string);
+            return Integer.parseInt(string);
+        } else {
+            return 0;
+        }
     }
 /*
     private static double setPrice(String value){

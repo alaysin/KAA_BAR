@@ -5,7 +5,7 @@ create table drinks
             primary key,
     "drinkName" varchar          not null,
     brand       varchar          not null,
-    price       double precision not null,
+    price       integer          not null,
     quantity    integer          not null,
     typ         varchar          not null,
     "managerId" integer

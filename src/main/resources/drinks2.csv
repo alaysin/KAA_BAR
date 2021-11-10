@@ -1,4 +1,4 @@
-drinkName,brand,price,quantity,typ
+drinkname,brand,price,quantity,typ
 Flowdesk,DIPHENHYDRAMINE HYDROCHLORIDE,72,81,Isuzu
 Bigtax,TERRASIL COLD SORE TREATMENT,96,93,Ford
 Pannier,Enoxaparin Sodium,68,76,Chevrolet
@@ -8,7 +8,7 @@ Span,VALTREX,88,27,BMW
 Cardify,ACER NEGUNDO POLLEN,74,82,Honda
 Zathin,SORIATANE,72,22,Nissan
 Job,Morphine Sulfate,19,7,Ford
-Tres-Zap,Ceramide Lift and Firm Makeup Broad Spectrum Sunscreen SPF 15 Spice,47,5,Chevrolet
+Tres-Zap,Ceramide,47,5,Chevrolet
 Vagram,CounterAct,63,70,Mercedes-Benz
 Ronstring,Apiol,67,65,Chevrolet
 Flexidy,Rite Aid Essential Defense,12,76,Audi
@@ -67,7 +67,7 @@ Stringtough,Rivastigmine Tartrate,49,11,Volkswagen
 Andalax,Valacyclovir Hydrochloride,54,74,Mitsubishi
 Lotlux,Carbidopa and Levodopa,41,73,Porsche
 Sub-Ex,Alprazolam,66,48,GMC
-Sonair,TERUFLEX Blood Bag System with Blood Sampling Arm Anticoagulant Citrate Phosphate Dextrose (CPD) AND OPTISOL (AS-5) Red Cell Preservative,5,66,Mercedes-Benz
+Sonair,TERUFLEX,5,66,Mercedes-Benz
 Greenlam,Evista,55,38,Mazda
 Zoolab,AHC Complex Choice EGF Booster,17,87,Ford
 It,Vizamyl,43,90,Mercury
@@ -110,7 +110,7 @@ Alphazap,Day Time Cold Multi-Symptom Severe,56,23,Dodge
 Prodder,Cold-EEZE,92,42,Chevrolet
 Voyatouch,Nadolol,15,18,Ford
 Y-Solowarm,Clarifoam EF,59,22,Chevrolet
-Bytecard,"Pollens - Trees, Oak Mix",23,99,Porsche
+Bytecard,Pollens,23,99,Porsche
 Alpha,Italian Rye Grass,89,92,GMC
 Daltfresh,Elta Lite Tar,86,51,Volkswagen
 Alpha,Cetirizine Hydrochloride,4,96,Mazda
@@ -142,7 +142,7 @@ Stringtough,NU-DERM SYSTEM NORMAL-DRY,40,35,BMW
 Zontrax,Carisoprodol,25,61,Maybach
 Overhold,ibuprofen,70,72,Kia
 Kanlam,Lyrica,25,68,Toyota
-Konklux,La Roche Posay Laboratoire Dermatologique Anthelios 30 Cooling Water Broad Spectrum SPF 30 Sunscreen,18,56,Chevrolet
+Konklux,La Roche,18,56,Chevrolet
 Konklab,Pain Relief,6,67,Ford
 Stringtough,divalproex sodium,99,25,Mercedes-Benz
 Flowdesk,SHISEIDO SHEER MATIFYING COMPACT (REFILL),29,5,Chrysler
@@ -152,7 +152,7 @@ Opela,Inflammation OTC,62,2,Audi
 Zontrax,ANTIBACTERIAL HAND SP WITH LIGHT MOISTURIZERS,7,8,Porsche
 Overhold,SHISEIDO UV PROTECTIVE FOUNDATION,39,50,Toyota
 Zathin,Care One Aspirin,86,7,BMW
-Stringtough,napoleon PERDIS ADVANCED MINERAL MAKEUP BROAD SPECTRUM SPF 15 Look 1,95,20,Dodge
+Stringtough,napoleon,95,20,Dodge
 Toughjoyfax,ibuprofen,74,98,Cadillac
 Veribet,Venlafaxine Hydrochloride,35,11,Ford
 Job,Lovastatin,19,85,Ford
@@ -168,7 +168,7 @@ Biodex,Promethazine Hydrochloride,87,60,Chevrolet
 Flexidy,Ed Hardy Habit Antiseptic Hand Sanitizing Wipe,60,80,Subaru
 Bitchip,NMC Magic Serum,78,24,Mazda
 Konklab,Oxygen,30,98,Hummer
-Tampflex,Pristall SaniShield Alcohol Free Antiseptic Hand Sanitizer,67,26,Chrysler
+Tampflex,Pristall,67,26,Chrysler
 Subin,Bupropion Hydrochloride,33,78,Suzuki
 Span,Sertraline Hydrochloride,55,36,Mitsubishi
 Flexidy,Clindamycin,22,13,Chevrolet
@@ -185,7 +185,7 @@ Holdlamis,Piperacillin and Tazobactam,80,38,Ford
 Solarbreeze,Naturals,98,77,Mercedes-Benz
 Trippledex,Metoprolol Tartrate,94,9,Porsche
 Keylex,NICK RELIEF,24,76,BMW
-Greenlam,"Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate",89,64,Ford
+Greenlam,Saccharate,,89,64,Ford
 Keylex,FOSINOPRIL Na,68,91,Mazda
 Vagram,Hydrochlorothiazide,1,50,Audi
 Job,Hand Cleanse - Strawberry Pomegranate,39,30,Mercedes-Benz
@@ -222,12 +222,12 @@ Regrant,Hydrocodone Bitartrate and Acetaminophen,36,86,Volkswagen
 Wrapsafe,Sumatriptan Succinate,78,2,Alfa Romeo
 Veribet,RIBASPHERE RibaPak,75,89,Chevrolet
 Transcof,MILK OF MAGNESIA ORIGINAL,71,37,Mitsubishi
-Prodder,"Pollens - Grasses, Johnson Grass Sorghum halepense",44,75,Pontiac
-Bitchip,"SULFACETAMIDE SODIUM, SULFUR",12,3,Porsche
+Prodder,Pollens,44,75,Pontiac
+Bitchip,SULFACETAMIDE,12,3,Porsche
 Biodex,Lamivudine,30,66,Kia
 Tampflex,Carvedilol,82,12,Land Rover
 Trippledex,Lyrica,52,26,Ford
-Latlux,LBEL EFFET PARFAIT MINERAL NATURAL SKIN EFFECT MOUSSE FOUNDATION SPF 16,26,85,GMC
+Latlux,LBEL,26,85,GMC
 Biodex,Trilipix,95,6,Isuzu
 Regrant,Doxycycline Hyclate,1,76,Mercury
 Subin,Earwax Removal Aid,66,87,Pontiac
@@ -307,7 +307,7 @@ Zaam-Dox,MINIPRIN,54,91,Lamborghini
 Regrant,Hydrochlorothiazide,41,49,Mazda
 Wrapsafe,ropinirole,67,57,Buick
 Vagram,Furosemide,59,98,Isuzu
-Duobam,"Bioelements, Inc.",15,39,Mazda
+Duobam,Bioelements,15,39,Mazda
 Fixflex,Passion Fruit Hand Sanitizer,23,77,Mercedes-Benz
 Greenlam,SERTRALINE HYDROCHLORIDE,34,11,Chevrolet
 Subin,Naproxen,23,86,Audi
@@ -334,13 +334,13 @@ Zamit,PROFESSIONAL WHITENING SYSTEM WHITENING,25,12,Infiniti
 Wrapsafe,facematter,28,16,Saab
 Sonsing,Liver,43,87,Toyota
 Matsoft,up and up cold and sinus,92,64,Ford
-Trippledex,"Fentanyl Citrate, Bupivacaine HCl",60,43,Mercury
+Trippledex,Fentanyl,60,43,Mercury
 Bamity,Brom Tapp,71,57,Volvo
 Mat Lam Tam,ATOMY SUN CREAM SPF 50 PA,58,28,GMC
-Home Ing,CD DIORSKIN NUDE SKIN-GLOWING MAKEUP SUNSCREEN BROAD SPECTRUM SPF 15 031 Sand,75,52,Pontiac
+Home Ing,CD,75,52,Pontiac
 Duobam,ESTRACE,6,42,Mitsubishi
 Home Ing,Gastritis - Ulcer,89,75,GMC
-Home Ing,Instant Hand Sanitizer Extra Enriched With Vitamin E Bead Vanilla Scent,66,41,Bentley
+Home Ing,Instant,66,41,Bentley
 Greenlam,Atorvastatin Calcium,41,95,Hyundai
 Ronstring,Miconazole 3,71,90,Isuzu
 Tresom,Lisinopril and hydrochlorothiazide,92,81,Chevrolet
@@ -351,7 +351,7 @@ Job,FLUZONE QUADRIVALENT,26,93,GMC
 Gembucket,Prednisone,90,54,Audi
 Opela,Sumatriptan,18,76,Ford
 Lotlux,Good Neighbor Pharmacy Night Time Severe,73,53,Nissan
-Fix San,"Dextroamphetamine Saccharate, Amphetamine Aspartate, Dextroamphetamine Sulfate and Amphetamine Sulfate",78,5,Kia
+Fix San,Dextroamphetamine,78,5,Kia
 Alphazap,Trandolapril,57,41,Ford
 Konklux,Pravastatin,88,62,Mercury
 Cardify,Terazosin hydrochloride,25,28,Dodge
@@ -359,7 +359,7 @@ Pannier,Fluoride,46,75,GMC
 Stronghold,Divalproex Sodium,21,13,Dodge
 Temp,METHOTREXATE,20,83,Land Rover
 Y-Solowarm,Ideal Flawless,59,5,Toyota
-Daltfresh,"Butalbital, Acetaminophen and Caffeine",75,55,Dodge
+Daltfresh,Butalbital,75,55,Dodge
 Redhold,DG Health Cough DM,17,98,Mercury
 Bitchip,WEGMANS,8,97,Chevrolet
 Solarbreeze,HAND SANITIZER,94,87,Nissan
@@ -387,7 +387,7 @@ Stim,Kids Travel Sickness,87,20,Chevrolet
 Biodex,Pain Reliever Plus,75,34,Suzuki
 Lotstring,Flounder,92,51,Mitsubishi
 Daltfresh,Hydrocodone Bitartrate And Acetaminophen,40,39,Toyota
-Tin,Kiehls Since 1851 CrossTerrain Antiperspirant Deodorant,19,23,Pontiac
+Tin,Kiehls,19,23,Pontiac
 Lotlux,Oxacillin,2,84,BMW
 Flowdesk,Winning Hands Alcohol Free,70,31,Buick
 Zathin,Headache Relief,62,21,Mitsubishi
@@ -430,9 +430,9 @@ Quo Lux,Avelox,91,52,Suzuki
 Cardify,JANUMET,10,40,Lincoln
 Rank,BUPROPION HYDROCHLORIDE,88,62,Audi
 Biodex,SHISEIDO ADVANCED HYDRO-LIQUID COMPACT (REFILL),33,30,Chevrolet
-Zaam-Dox,bareMinerals READY Touch Up Veil Broad Spectrum SPF 15,40,2,BMW
+Zaam-Dox,bareMinerals,40,2,BMW
 Trippledex,Gabapentin,39,31,Toyota
-Toughjoyfax,Illusion Tinted Moisturizer Broad Spectrum Honey,46,36,Chrysler
+Toughjoyfax,Illusion,46,36,Chrysler
 Ronstring,Baclofen,16,87,Chevrolet
 Voltsillam,Povidone Iodine,32,43,Audi
 Zoolab,Estring,53,49,Ford
@@ -440,14 +440,14 @@ Konklab,Dexmethylphenidate Hydrochloride,24,9,Isuzu
 Cookley,Ergocalciferol,36,27,Ford
 Stim,TAMNAMO ESSENTIAL HAIR TONIC,43,37,Scion
 Rank,PAXIL,2,62,Hummer
-Veribet,Fresh Sugar Coral Tinted Lip Treatment SPF 15,56,26,Cadillac
+Veribet,Fresh,56,26,Cadillac
 Opela,Hand Wash,42,96,Plymouth
 Cardguard,Amitriptyline Hydrochloride,55,60,Chevrolet
 Regrant,TYVASO,96,53,Ford
 Home Ing,Clonidine Hydrochloride,70,99,Mercedes-Benz
 Ronstring,Rough Pigweed,32,41,Infiniti
 Zathin,PEA,30,57,Oldsmobile
-Stringtough,"Molds, Rusts and Smuts, Epidermophyton floccosum",31,14,Mazda
+Stringtough,Molds,31,14,Mazda
 Cardguard,Anti-Itch Wal-Dryl,99,53,Nissan
 Fixflex,Night Time Cough Cherry,54,95,Ford
 Home Ing,Parafon Forte DSC,82,55,BMW
@@ -457,7 +457,7 @@ Prodder,Equisetum Viscum,18,87,Mitsubishi
 Y-Solowarm,Enalapril Maleate,73,41,Mazda
 Otcom,SPEEDGEL RX,51,52,Mercedes-Benz
 Tres-Zap,Miconazole 7,48,70,Saab
-Alphazap,Sheer Genius Liquid Foundation - Light Look,38,71,Buick
+Alphazap,Sheer,38,71,Buick
 Sub-Ex,CEDAR FALL BLOOMING ELM POLLEN,8,76,Chevrolet
 Job,Sleep Aid,66,31,Toyota
 Daltfresh,Chloroquine,27,43,Chevrolet
@@ -473,7 +473,7 @@ Bigtax,Sodium Bicarbonate,88,61,Mazda
 Bamity,Ziprasidone Hydrochloride,65,22,Ford
 Gembucket,Aspirin,26,88,Plymouth
 Holdlamis,Livergen,55,70,Lotus
-Fixflex,CLARINS HydraQuench Normal to Dry Skin Broad Spectrum SPF 15 Sunscreen,40,50,Suzuki
+Fixflex,CLARINS,40,50,Suzuki
 Y-find,QUETIAPINE FUMARATE,65,91,Chrysler
 Zoolab,First Aid Research Bacitracin with Zinc,23,46,Volkswagen
 Span,Diclofenac sodium and Misoprostol,2,87,Mercedes-Benz
@@ -530,7 +530,7 @@ Aerified,Hydralazine Hydrochloride,12,85,Ford
 Lotstring,Skin Eruptions Cough,92,25,Chrysler
 Treeflex,Nexiclon XR,8,82,Dodge
 Sonair,Allium Cepa Kit Refill,33,48,Ford
-Asoka,"Molds, Rusts and Smuts, Fusarium vasinfectum",69,39,Pontiac
+Asoka,Molds,69,39,Pontiac
 Voltsillam,Alcohol Prep Pad,35,92,Subaru
 Bigtax,Balsalazide Disodium,5,72,Nissan
 Kanlam,Gentle Eczema Balm,34,29,BMW
@@ -572,7 +572,7 @@ Zathin,EEMT,93,96,Toyota
 Prodder,Nifedipine,70,68,Suzuki
 Solarbreeze,OXYGEN,88,80,Toyota
 Prodder,Mirtazapine,49,82,Acura
-Solarbreeze,Symmetry Foaming Hand Sanitizer-Fragrance Free with Aloe and Vitamin E,1,74,Mercedes-Benz
+Solarbreeze,Symmetry,1,74,Mercedes-Benz
 Trippledex,Amlodipine Besylate and Benazepril Hydrochloride,43,75,Ford
 Tresom,CareAll Medicated Chest Rub,28,60,Land Rover
 Trippledex,Lavender de Provence Antibacterial Hand Sanitizer,92,35,Dodge
@@ -586,7 +586,7 @@ Pannier,Oxygen,53,56,BMW
 Alphazap,Tamiflu,38,76,Cadillac
 Ventosanzap,CEFPROZIL,68,36,Lexus
 Daltfresh,OXYGEN,74,68,Mercedes-Benz
-Matsoft,flormar REBORN BB SUNSCREEN BROAD SPECTRUM SPF 30 CP10 Classic Beige,7,89,Mercedes-Benz
+Matsoft,flormar,7,89,Mercedes-Benz
 Tresom,Creomulsion,26,38,Lincoln
 Domainer,Biotox Para,74,96,Toyota
 Treeflex,Ciprofloxacin,48,56,Chevrolet
@@ -610,7 +610,7 @@ Alphazap,risedronate sodium,59,63,Dodge
 Regrant,Tamiflu,69,55,Ford
 Y-find,Losartan Potassium and Hydrochlorothiazide,61,48,Chevrolet
 Hatity,equaline ibuprofen,52,15,Mazda
-Toughjoyfax,"Pollens - Trees, Oak Mix",89,63,Plymouth
+Toughjoyfax,Pollens,89,63,Plymouth
 Transcof,Fluoxetine,84,25,Lexus
 Stringtough,Well at Walgreens,32,97,Lincoln
 Otcom,Canadian Blue Grass,31,87,Honda
@@ -618,7 +618,7 @@ Daltfresh,Aconitum Belladonna,52,38,Chevrolet
 Vagram,PROMETHAZINE HYDROCHLORIDE,5,39,Ford
 Prodder,Ampicillin and Sulbactam,47,83,Lincoln
 Hatity,Ketoprofen,29,27,GMC
-Toughjoyfax,"Butalbital, Acetaminophen, and Caffeine",3,26,Suzuki
+Toughjoyfax,Butalbital,3,26,Suzuki
 Biodex,Paroxetine Hydrochloride,34,18,Pontiac
 Wrapsafe,ColemanHand Sanitizer,26,88,MINI
 Matsoft,Benazepril Hydrochloride,12,30,GMC
@@ -653,7 +653,7 @@ Voyatouch,Oxycodone and Acetaminophen,76,32,Pontiac
 Ronstring,Caduet,50,95,Mercedes-Benz
 Opela,Amoxicillin,45,12,Chevrolet
 Redhold,Topotecan,76,88,Scion
-Stim,CLARINS Broad Spectrum SPF 15 Titanium Dioxide-Sunscreen Extra-Firming Foundation Tint 105,77,4,Chevrolet
+Stim,CLARINS,77,4,Chevrolet
 Fixflex,Meclizine Hydrochloride,22,2,Ford
 Vagram,RANITIDINE,79,77,Jaguar
 Home Ing,Pleo Rec,96,40,Pontiac
@@ -663,7 +663,7 @@ Zathin,Verapamil Hydrochloride,86,50,Ford
 Cardguard,Rescula,3,73,Mitsubishi
 Zamit,Injury/Trauma Complex,42,88,Hyundai
 Subin,simple pleasures,82,6,Chevrolet
-Hatity,Medical Provider Single Use EZ Flu Shot Fluvirin 2014-2015,4,50,Chevrolet
+Hatity,Medical ,4,50,Chevrolet
 Greenlam,CLASSIC CLEAN 2 IN 1,34,36,Chevrolet
 Alpha,Virt-Pn DHA,85,83,Acura
 Tresom,Hydrocodone Bitartrate and Acetaminophen,87,31,Infiniti
@@ -692,7 +692,7 @@ Stronghold,rexall bismuth,59,51,Lamborghini
 Zathin,Dipyridamole,30,14,Dodge
 Cookley,8 hour pain relief,4,61,Chevrolet
 Ronstring,Contac Cold and Flu,64,51,Dodge
-Voyatouch,Mary Kay Tinted Moisturizer Sunscreen SPF 20 Beige 2 (Drug Facts),61,25,Subaru
+Voyatouch,Mary,61,25,Subaru
 Veribet,Good Neighbor Pharmacy Pain Relief,1,93,Mazda
 Stim,Colgate,39,4,Volkswagen
 Sub-Ex,Bumetanide,99,86,Chevrolet
@@ -710,7 +710,7 @@ Fix San,Lorazepam,84,60,Mercedes-Benz
 Solarbreeze,Amoxicillin and Clavulanate Potassium,62,59,Ferrari
 Tempsoft,TOPCARE,27,77,Pontiac
 Span,BabyGanics Sunscreen,69,37,Lexus
-Flowdesk,Advanced Eye Relief/ Redness Instant Relief,41,83,Eagle
+Flowdesk,Advanced,41,83,Eagle
 Regrant,Sentradine,18,24,Suzuki
 Zamit,Lanoguard,87,59,Maserati
 Home Ing,Black Locust,83,61,Buick
@@ -730,7 +730,7 @@ Bitchip,FENTANYL TRANSDERMAL SYSTEM,93,71,Volkswagen
 Stim,Broncomar,80,20,Chevrolet
 Kanlam,Acetaminophen,20,73,Nissan
 Zathin,simvastatin,7,66,Mazda
-Temp,"NEOMYCIN SULFATE, POLYMYXIN B SULFATE AND BACITRACIN ZINC",33,76,Chevrolet
+Temp,NEOMYCIN,33,76,Chevrolet
 Daltfresh,Sodium Chromate 51,63,76,Volkswagen
 Matsoft,Calcitriol,52,91,Jeep
 Temp,Smart Sense Nicotine,19,24,Suzuki
@@ -774,7 +774,7 @@ Cardguard,Ascomp with Codeine,83,16,Volkswagen
 Zathin,Acyclovir Sodium,46,8,Nissan
 Daltfresh,Divalproex sodium,93,81,Jeep
 Tres-Zap,Dr L Advanced HCG Formula,1,77,Mitsubishi
-Bigtax,DIORSNOW White Reveal UVB Protection Sunscreen Pearly White SPF 50,90,44,Plymouth
+Bigtax,DIORSNOW,90,44,Plymouth
 Lotlux,Equaline Pain Relief,69,53,Ford
 Solarbreeze,Brut Anti-perspirant and Deodorant,86,28,Chrysler
 Regrant,Aldara,47,75,Chevrolet
@@ -787,8 +787,8 @@ Bytecard,Kinesys,33,62,Pontiac
 Keylex,All Day Allergy,2,81,Chevrolet
 Bigtax,Phenytoin Sodium,23,88,Pontiac
 Voyatouch,Valsartan and Hydrochlorothiazide,64,19,Mitsubishi
-Flowdesk,"Pollens - Trees, Olive Olea europaea",54,78,Mercedes-Benz
-Stronghold,"Dextroamphetamine saccharate, amphetamine aspartate monohydrate, dextroamphetamine sulfate, amphetamine sulfate",78,26,Honda
+Flowdesk,Pollens,54,78,Mercedes-Benz
+Stronghold,Dextroamphetamine,78,26,Honda
 Lotstring,INVEGA,45,23,Volvo
 Gembucket,Gellert Joint Care,34,63,Kia
 Solarbreeze,Clarins Rouge Hydra Nude - 03 Nude Beige,72,89,Saturn
@@ -805,7 +805,7 @@ Stim,CARBOplatin,67,19,Mercedes-Benz
 Y-find,Oxycodone Hydrochloride,90,11,Mazda
 Bytecard,Balsam Poplar,45,32,Buick
 Job,Medi-Scrub,79,31,Lincoln
-Temp,flormar CC Magical Color Effect Color Correcting Cream Sunscreen Broad Spectrum SPF 15 CC03,65,92,Porsche
+Temp,flormar,65,92,Porsche
 Lotlux,Hot Flashes,8,64,Acura
 Zathin,Good Sense Nasal Decongestant PE,19,52,Geo
 Gembucket,Ibuprofen,33,83,Saturn
@@ -871,7 +871,7 @@ Viva,Kaletra,25,84,Volvo
 Mat Lam Tam,Boscia BB SPF 27 PA,25,51,Dodge
 Duobam,Clindamycin Hydrochloride,69,48,Lincoln
 Zaam-Dox,SOLIE TONER,85,38,BMW
-Job,MODLINA PEPTIDE SOOTHING ESSENTIAL HYDROGEL MASK PACK,25,43,Buick
+Job,MODLINA,25,43,Buick
 Bamity,Age Defying Blemish Treatment,14,89,Mercedes-Benz
 Matsoft,Cymbalta,9,52,Hyundai
 Y-find,Tylenol Arthritis Pain,65,47,Chevrolet
@@ -886,7 +886,7 @@ Tresom,Digoxin,45,37,Ford
 Bamity,Lodrane D,28,49,GMC
 Tres-Zap,Vaprino A-D,25,58,Pontiac
 Cardify,MAXALT-MLT,99,66,Audi
-Flexidy,ESIKA HD COLOR HIGH DEFINITION COLOR SPF 20,52,56,Lincoln
+Flexidy,ESIKA,52,56,Lincoln
 Bigtax,Topex,37,65,Geo
 Bigtax,Helleborus e pl. tota 3 Special Order,41,69,Chevrolet
 Latlux,Carvedilol,86,85,Suzuki
@@ -905,7 +905,7 @@ Sonair,Australian Gold,3,66,Dodge
 Mat Lam Tam,Neutrogena All in 1 Acne Control,71,3,Ford
 Redhold,Duck Feathers,94,86,Chevrolet
 Sub-Ex,Skin So Soft,79,82,Mazda
-Viva,"OXYGEN, REFRIGERATED LIQUID",72,21,Chrysler
+Viva,OXYGEN,72,21,Chrysler
 Matsoft,Primer,97,98,Chevrolet
 Voltsillam,Norco,1,54,Aston Martin
 Aerified,Petroleum Jelly,80,58,Mercedes-Benz
@@ -925,12 +925,12 @@ Y-find,Speed Stick Gear Fresh Force,13,47,Mercedes-Benz
 Zamit,Alka-Seltzer Plus,40,47,Mitsubishi
 Veribet,Ranitidine Hydrochloride,59,60,Chevrolet
 Zamit,Vaporizing Colds Rub,71,46,Pontiac
-Bytecard,Hydrocodone Bitartrate and Acetaminophen,59,54,Honda
+Bytecard,Hydrocodone,59,54,Honda
 Zathin,Oxaliplatin,26,95,Lamborghini
 Duobam,CELEBREX,28,10,GMC
 Veribet,Sodium Chloride,68,48,Chevrolet
 Matsoft,Myo-Breathe,17,12,Hyundai
-Trippledex,DR. RECKEWEG R30 Atomare Beckeron,86,92,Nissan
+Trippledex,DR,86,92,Nissan
 Overhold,Gabapentin,46,85,Hyundai
 Redhold,Freshscent Sport Antibacterial,81,78,Maybach
 Alphazap,Retin-A,64,34,Oldsmobile
@@ -954,7 +954,7 @@ Temp,TN Dickinsons Witch Hazel Hemorrhoidal Pads,17,45,Dodge
 Fix San,Gastrotone,33,78,Mazda
 Duobam,methylphenidate hydrochloride,82,10,Mercedes-Benz
 Prodder,GUNA-PMS,5,76,Ford
-Gembucket,Sweet Golden Pear Antibacterial Foaming Hand Wash,87,60,Volvo
+Gembucket,Sweet,87,60,Volvo
 Hatity,Koh Gen Do Maifanshi Makeup Color Base,50,63,Chevrolet
 Cookley,Senna Laxative,83,24,Volkswagen
 Flowdesk,TUBERSOL,83,86,Toyota

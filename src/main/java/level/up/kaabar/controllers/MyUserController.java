@@ -1,6 +1,7 @@
-package level.up.kaabar.User;
+package level.up.kaabar.controllers;
 
-import level.up.kaabar.config.model.User;
+import level.up.kaabar.User.MyUserServiceImpl;
+import level.up.kaabar.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +20,7 @@ public class MyUserController {
     MyUserServiceImpl myUserServiceImpl;
 
 
-
+/*
     @GetMapping
     public List<User> usersFindAll() {
         return myUserServiceImpl.findAll();
@@ -37,5 +38,5 @@ public class MyUserController {
                                             String surname) {
         return myUserServiceImpl.createNewUser(login, password, name, surname);
     }
-
+*/
 }

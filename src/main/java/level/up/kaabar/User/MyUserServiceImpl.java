@@ -1,6 +1,6 @@
 package level.up.kaabar.User;
 
-import level.up.kaabar.config.model.User;
+import level.up.kaabar.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;

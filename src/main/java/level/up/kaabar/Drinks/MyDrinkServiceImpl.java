@@ -1,6 +1,6 @@
 package level.up.kaabar.Drinks;
 
-import level.up.kaabar.config.model.Drink;
+import level.up.kaabar.model.Drink;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -12,8 +12,8 @@ public class MyDrinkServiceImpl implements MyDrinkSevrvice {
     private ArrayList<Drink> drinks = new ArrayList<>();
 
     @Override
-    public Drink newDrinkAdd (String drinkName, String brand, double price, int quantity, String typ) {
-        Drink newDrink = new Drink(drinkName, brand, price,quantity, typ);
+    public Drink newDrinkAdd (String drinkName, String brand, int price, int quantity, String typ) {
+        Drink newDrink = new Drink(drinkName, brand, price, quantity, typ);
         return newDrink;
     }
 
