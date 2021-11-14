@@ -2,31 +2,56 @@ package level.up.kaabar.controllers;
 
 import level.up.kaabar.Drinks.MyDrinkServiceImpl;
 import level.up.kaabar.dao.DrinksRepo;
+import level.up.kaabar.dao.DrinksRepoPaging;
 import level.up.kaabar.model.Drink;
+import level.up.kaabar.utils.PaginationParams;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-@RestController
-@RequestMapping("/drinks")
+import static org.springframework.util.StringUtils.hasText;
+
+@Controller
+@RequestMapping({"/drinks", ""})
+@AllArgsConstructor
 public class MyDrinkController {
 
     private DrinksRepo drinksRepo;
+    private DrinksRepoPaging drinksRepoPaging;
 
     @GetMapping("")
     public String index(Model model,
-                        @RequestParam(defaultValue = "10") int count) {
-        model.addAttribute("drinks", drinksRepo.findAll()
-        .stream().collect(Collectors.toList()));
+                        @RequestParam(value = "page", required = false, defaultValue = "1") Integer page,
+                        @RequestParam(value = "q", required = false, defaultValue = "") String query
+//                      ,@RequestParam(defaultValue = "10") int count
+    ) {
+        PageRequest pageRequest = PageRequest.of(page - 1, 10);
+
+        String queryString = query.trim();
+
+        Page<Drink> drinks = hasText(queryString) ?
+                drinksRepoPaging.findContact(queryString, pageRequest)
+                : drinksRepoPaging.findAll(pageRequest);
+
+//        model.addAttribute("drinks", drinksRepo.findAll()
+//        .stream().collect(Collectors.toList()));
+        model.addAttribute("query", query);
+        model.addAttribute("drinks", drinks.stream().collect(Collectors.toList()));
+
+        PaginationParams<Drink> paginationParams = new PaginationParams<>(drinks);
+        model.addAllAttributes(paginationParams.getParams(page));
 
         return "drinks";
     }
-
+/*
     @Autowired
     MyDrinkServiceImpl myDrinkServiceImpl;
 
@@ -50,6 +75,7 @@ public class MyDrinkController {
                                                    @PathVariable ("q") int quantyty,
                                                    @RequestBody Drink drink) {
         return updateDrinkQuantity(id, quantyty,drink);
-    }
 
+    }
+*/
 }

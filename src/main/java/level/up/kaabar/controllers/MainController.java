@@ -15,7 +15,7 @@ import java.util.List;
 
 public class MainController {
 
-    @GetMapping("/")
+    @GetMapping("/main")
     public String greeting(Model model) {
         model.addAttribute("title", "Main page");
         return "home";

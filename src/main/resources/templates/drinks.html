@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <div th:replace="fragments/header :: header"/>
+<!--    <div th:replace="fragments/header :: header"/>-->
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.6.0/css/bootstrap.css">
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#addDrink').submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: '/drinks',
+                    method: 'POST',
+                    data: $('#addDrink form').serialize()
+                }).done(function() {
+                    $('#addDrink').modal('toggle')
+                    location.href = location.href;
+                }).fail(function() { alert('something went wrong')})
+
+            })
+
+            $('#saveContact').click(function(e) {
+                $('#addContact').submit();
+            })
+        })
+
+    </script>
 </head>
 <body>
+drinks test
 <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">My Simple CRM</a>
@@ -26,7 +51,7 @@
 <div class="container">
     <div class="row" style="padding-top: 10px">
         <div class="col-md-6">
-            <button class="btn btn-success" data-toggle="modal" data-target="#addContact">Добавить</button>
+            <button class="btn btn-success" data-toggle="modal" data-target="#addDrink">Добавить</button>
         </div>
         <div class="col-md-6" style="text-align: right">
             <form class="form-inline float-right">
@@ -51,12 +76,12 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="item: ${drinks}">
-                <td th:text="${item.name}" />
-                <td th:text="${item.brand}" />
-                <td th:text="${item.price}" />
-                <td th:text="${item.quantity}" />
-                <td th:text="${item.typ}" />
+            <tr th:each="drink: ${drinks}">
+                <td th:text="${drink.name}" />
+                <td th:text="${drink.brand}" />
+                <td th:text="${drink.price}" />
+                <td th:text="${drink.quantity}" />
+                <td th:text="${drink.typ}" />
 
             </tr>
             </tbody>
@@ -64,9 +89,9 @@
 
         <nav aria-label="Page navigation example">
             <ul class="pagination">
-                <li class="page-item" th:if="${hasPrev}"><a class="page-link" th:href="@{/contacts(page=${currentPage - 1})}">Previous</a></li>
-                <li class="page-item" th:classappend="${page == currentPage} ? 'active'" th:each="page: ${#numbers.sequence(minPage, maxPage)}"><a class="page-link" th:href="@{/contacts(page=${page})}" th:text="${page}"></a></li>
-                <li class="page-item" th:if="${hasNext}"><a class="page-link" th:href="@{/contacts(page=${currentPage + 1})}">Next</a></li>
+                <li class="page-item" th:if="${hasPrev}"><a class="page-link" th:href="@{/drinks(page=${currentPage - 1})}">Previous</a></li>
+                <li class="page-item" th:classappend="${page == currentPage} ? 'active'" th:each="page: ${#numbers.sequence(minPage, maxPage)}"><a class="page-link" th:href="@{/drinks(page=${page})}" th:text="${page}"></a></li>
+                <li class="page-item" th:if="${hasNext}"><a class="page-link" th:href="@{/drinks(page=${currentPage + 1})}">Next</a></li>
             </ul>
         </nav>
     </div>
