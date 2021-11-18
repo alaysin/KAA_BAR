@@ -1,21 +1,17 @@
 package level.up.kaabar.controllers;
 
 
-import level.up.kaabar.User.MyUserServiceImpl;
 import level.up.kaabar.dao.UserRepoPaging;
 import level.up.kaabar.model.User;
 import level.up.kaabar.utils.PaginationParams;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.transaction.Transactional;
-import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.springframework.util.StringUtils.hasText;

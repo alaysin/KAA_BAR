@@ -1,8 +1,4 @@
-package level.up.kaabar.JDBC;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+package level.up.kaabar.jdbc;
 
 public class JDBCMain {
     public static void main(String[] args) {

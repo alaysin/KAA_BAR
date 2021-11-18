@@ -1,6 +1,7 @@
-package level.up.kaabar.User;
+package level.up.kaabar.services.impl;
 
 import level.up.kaabar.model.User;
+import level.up.kaabar.services.MyUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -12,6 +13,14 @@ import java.util.List;
 
 @Component
 public class MyUserServiceImpl implements MyUserService {
+    @Autowired
+    DataSource dataSource;
+
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     private ArrayList<User> users = new ArrayList<>();
 
@@ -44,14 +53,7 @@ public class MyUserServiceImpl implements MyUserService {
         return null;
     }
 
-    @Autowired
-    DataSource dataSource;
 
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
-
-    @Autowired
-    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
 
     public void run (String... args) throws Exception {
