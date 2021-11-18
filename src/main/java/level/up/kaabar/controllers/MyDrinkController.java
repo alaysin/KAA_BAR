@@ -14,6 +14,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.data.domain.Page;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -45,11 +46,32 @@ public class MyDrinkController {
 //        .stream().collect(Collectors.toList()));
         model.addAttribute("query", query);
         model.addAttribute("drinks", drinks.stream().collect(Collectors.toList()));
+        model.addAttribute("title", "Lets drink!");
 
         PaginationParams<Drink> paginationParams = new PaginationParams<>(drinks);
         model.addAllAttributes(paginationParams.getParams(page));
 
         return "drinks";
+    }
+
+    @PostMapping
+    @Transactional
+    public @ResponseBody String create(@RequestParam("name") String name,
+                                       @RequestParam("brand") String brand,
+                                       @RequestParam("price") int price,
+                                       @RequestParam("quantity") int quantity,
+                                       @RequestParam("typ") String typ
+    ) {
+        Drink drink = new Drink();
+        drink.setName(name);
+        drink.setBrand(brand);
+        drink.setPrice(price);
+        drink.setQuantity(quantity);
+        drink.setTyp(typ);
+
+        drinksRepoPaging.save(drink);
+
+        return "OK";
     }
 /*
     @Autowired

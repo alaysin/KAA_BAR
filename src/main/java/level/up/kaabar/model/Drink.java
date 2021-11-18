@@ -1,5 +1,6 @@
 package level.up.kaabar.model;
 
+import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -15,20 +16,24 @@ public class Drink {
 
     @Column(nullable = false, updatable = false, length = 50)
     @NotBlank
+    @Setter @Getter
     private String name;
 
     @Column(nullable = false, updatable = false, length = 50)
     @NotBlank
+    @Setter @Getter
     private String brand;
 
     @Column(nullable = false, updatable = false, length = 50)
     @NotBlank
+    @Setter @Getter
     private int price;
 
-    @Setter
+    @Setter @Getter
     @Column(nullable = false, updatable = true, length = 50)
     private int quantity;
 
+    @Setter @Getter
     @Column(nullable = false, updatable = false, length = 50)
     @NotBlank
     private String typ;

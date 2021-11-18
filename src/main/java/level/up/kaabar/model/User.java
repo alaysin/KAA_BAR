@@ -1,5 +1,6 @@
 package level.up.kaabar.model;
 
+import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -15,26 +16,38 @@ public class User {
     @SequenceGenerator(name = "users_id_seq", allocationSize = 1)
     private int id;
 
-    @Column( nullable = false, unique = true, length = 100)
+    @Column(unique = true, length = 100)
     @NotBlank
+    @Getter
+    @Setter
     private String login;
 
-    @Column(nullable = false, unique = false, length = 100)
+    @Column(unique = false, length = 100)
     @NotBlank
+    @Getter
+    @Setter
     private String password;
 
-    @Column
+    @Column (name = "is_admin")
+    @Getter
+    @Setter
     private boolean isAdmin;
 
-    @Column(nullable = false, unique = false, length = 100)
+    @Column(unique = false, length = 100)
     @NotBlank
+    @Getter
+    @Setter
     private String name;
 
-    @Column(nullable = false, unique = false, length = 100)
+    @Column(unique = false, length = 100)
     @NotBlank
+    @Getter
+    @Setter
     private String last_name;
 
+    @Getter
     @Setter
+    @Column (name = "to_delete")
     private boolean toDelete;
 /*
     @OneToMany(mappedBy = "manager")
