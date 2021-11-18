@@ -1,4 +1,4 @@
-package level.up.kaabar.dao;
+package level.up.kaabar.User;
 
 public interface MyUserDAO {
 }

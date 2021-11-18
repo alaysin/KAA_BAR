@@ -1,6 +1,5 @@
-package level.up.kaabar.services.impl;
+package level.up.kaabar.Drinks;
 
-import level.up.kaabar.services.MyDrinkSevrvice;
 import level.up.kaabar.model.Drink;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package level.up.kaabar.services;
+package level.up.kaabar.User;
 
 import level.up.kaabar.model.User;
 

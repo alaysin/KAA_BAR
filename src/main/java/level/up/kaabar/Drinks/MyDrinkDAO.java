@@ -1,4 +1,4 @@
-package level.up.kaabar.dao;
+package level.up.kaabar.Drinks;
 
 public interface MyDrinkDAO {
 }

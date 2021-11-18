@@ -1,4 +1,4 @@
-package level.up.kaabar.services;
+package level.up.kaabar.Drinks;
 
 import level.up.kaabar.model.Drink;
 import org.springframework.stereotype.Component;
